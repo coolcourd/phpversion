@@ -6,7 +6,6 @@ cur_dir=$(pwd)
             if [[ ! -f /var/cpanel/users/$user ]]; then
             echo No access to user "'$user'"!
             else
-            cur_dir=$(pwd)
                curl -s $main_domain"${cur_dir#*public_html}/phpinfo.php" | grep -oP "PHP Version \d.\d.\d+"
             fi
                rm -rf phpinfo.php
