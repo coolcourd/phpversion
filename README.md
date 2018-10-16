@@ -1,0 +1,2 @@
+# phpversion
+echos php version
